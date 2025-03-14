@@ -51,13 +51,15 @@ jobs:
         #with:
         #  submodules: recursive
         #  fetch-depth: 0
+
+      - name: Move files from src to root
+        run: mv src/* .
       
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5
 
       - name: Install npm dependencies
-        working-directory: ./src
         run: npm install
       
       #- name: copy package.json to root
@@ -75,7 +77,6 @@ jobs:
           hugo --logLevel debug \
             --gc \
             --minify \
-            --source src \
             --baseURL "${{ steps.pages.outputs.base_url }}/"
       
       #- name: Install Pagefind
@@ -91,10 +92,10 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./src/public
+          path: ./public
       
       - name: Inspect artifact
-        run: ls -R ./src/public
+        run: ls -R ./public
 
   # Deployment job
   deploy:
