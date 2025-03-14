@@ -52,14 +52,12 @@ jobs:
         id: pages
         uses: actions/configure-pages@v5
       
+      - name: copy package.json to root
+        run: cp ./src/package.json ./
+
       - name: Install Node.js dependencies
-        working-directory: ./src
         run: "[[ -f package-lock.json || -f npm-shrinkwrap.json ]] && npm ci || true"
       
-      - name: Build project
-        working-directory: ./src
-        run: npm run build
-
       - name: Build with Hugo
         env:
           HUGO_CACHEDIR: ${{ runner.temp }}/hugo_cache
