@@ -1,3 +1,5 @@
+# rework needed !!!
+
 1. Clone this git repo...
 2. docker run -v ${PWD}:/hugo hugo new site ../src
 3. preview.sh
