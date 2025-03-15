@@ -17,13 +17,15 @@ RUN apt-get update && \
 RUN curl -fsSL https://deb.nodesource.com/setup_22.x -o nodesource_setup.sh
 RUN bash nodesource_setup.sh
 
+RUN echo "hello world"
+
 # Install Node22
 RUN apt-get update && \
-    apt-get install -y --no-install-recommends \
+    apt-get install -y \
     nodejs
 
 # Verify installation
-RUN node -v && npm -v
+RUN node -v && npm -v && npx -v
 
 # Install Go
 RUN wget https://go.dev/dl/go$GOLANG_VERSION.linux-amd64.tar.gz && \
@@ -43,17 +45,22 @@ RUN wget https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hug
     tar -C /usr/local/bin -xzf hugo.tar.gz && \
     rm hugo.tar.gz
 
+# Set the working directory for Hugo projects
+WORKDIR /hugo/src
+
+# Tailwind
+#RUN wget https://github.com/tailwindlabs/tailwindcss/releases/download/v4.0.14/tailwindcss-linux-x64 -O /usr/local/tailwindcss
+RUN npm install -D tailwindcss@latest postcss@latest autoprefixer@latest
+ENV PATH=/app/node_modules/.bin:$PATH
+
 # Clean up
 RUN apt-get remove -y wget && apt-get autoremove -y && apt-get clean
 RUN rm -rf /var/lib/apt/lists/*
 
 # Set hugo in the path
-RUN export PATH=$PATH:/usr/local/go/bin
+RUN PATH=$PATH:/usr/local/go/bin
 
 EXPOSE 1313
-
-# Set the working directory for Hugo projects
-WORKDIR /hugo/src
 
 #ENTRYPOINT 
 ENTRYPOINT ["hugo"]
