@@ -6,8 +6,14 @@ banner:
   image: "/images/banner.png"
   button:
     enable: true
-    label: "Get Started For Free"
+    label: "Go to MyBigPoint"
     link: "https://github.com/zeon-studio/hugoplate"
+
+# Countdown
+countdown:
+    title: "Tage bis zum Turnier"
+    content: "abc"
+    image: "/images/countdown-background.png"
 
 # Features
 features:
