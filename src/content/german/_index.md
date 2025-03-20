@@ -39,7 +39,7 @@ features:
       link: ""
 
   - title: "Besucherinformationen"
-    image: "/images/zuschauerinfo.png"
+    image: "/images/zuschauerinfo.jpg"
     content: "Herzlich willkommen, liebe Tennisfans!<br/>Erleben Sie hochklassiges Tennis auf unserer wunderschönen Anlage. Genießen Sie spannende Matches in entspannter Atmosphäre. Kommen Sie vorbei und machen Sie das Drais Open zu einem unvergesslichen Erlebnis!"
     bulletpoints:
       - "Für Ihr leibliches Wohl ist bestens gesorgt"
