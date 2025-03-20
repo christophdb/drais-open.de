@@ -1,15 +1,26 @@
 <div id="countdown">
-    <h3>Countdown to April 15, 2025</h3>
     <div id="timer">
-        <div><span id="days"></span>Days</div>
-        <div><span id="hours"></span>Hours</div>
-        <div><span id="minutes"></span>Minutes</div>
-        <div><span id="seconds"></span>Seconds</div>
+        <div>
+            <h5 class="countdown_legend">Days</h5>
+            <h3 class="countdown_time" id="days"></h3>
+        </div>
+        <div>
+            <h5 class="countdown_legend">Hours</h5>
+            <h3 class="countdown_time" id="hours"></h3>
+        </div>
+        <div>
+            <h5 class="countdown_legend">Minutes</h5>
+            <h3 class="countdown_time" id="minutes"></h3>
+        </div>
+        <div>
+            <h5 class="countdown_legend">Seconds</h5>
+            <h3 class="countdown_time" id="seconds"></h3>
+        </div>
     </div>
 </div>
 
 <script>
-    const targetDate = new Date("April 15, 2025 00:00:00").getTime();
+    const targetDate = new Date("April 06, 2025 09:00:00").getTime();
 
     const countdownInterval = setInterval(() => {
         const now = new Date().getTime();

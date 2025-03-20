@@ -1,59 +1,75 @@
 ---
-# Banner
-banner:
-  title: "The Ultimate Starter Template You Need To Start Your Hugo Project"
-  content: "Hugoplate is a free starter template built with Hugo and TailwindCSS, providing everything you need to jumpstart your Hugo project and save valuable time."
-  image: "/images/banner.png"
-  button:
-    enable: true
-    label: "Go to MyBigPoint"
-    link: "https://github.com/zeon-studio/hugoplate"
-
 # Countdown
 countdown:
-    title: "Tage bis zum Turnier"
-    content: "abc"
+    title: "Tage bis zu den Drais-Open"
+    content: "Erleben Sie spannende Matches und sportliche Höchstleistungen<br/>am 06.04.2025!"
     image: "/images/countdown-background.png"
+    button:
+      enable: true
+      label: "Jetzt anmelden auf my MyBigPoint"
+      link: "https://spieler.tennis.de/web/guest/turniersuche?tournamentId=683758"
+    
+
+# Banner
+#banner:
+#  title: "Drais-Open"
+#  content: "Erleben Sie spannende Matches und sportliche Höchstleistungen!"
+#  image: ""
+#  button:
+#    enable: true
+#    label: "Jetzt anmelden auf my MyBigPoint"
+#    link: "https://spieler.tennis.de/web/guest/turniersuche?tournamentId=683758"
 
 # Features
 features:
-  - title: "What's Included in Hugoplate"
-    image: "/images/service-1.png"
-    content: "Hugoplate is a comprehensive starter template that includes everything you need to get started with your Hugo project. What's Included in Hugoplate"
+  - title: "Teilnehmerinformationen"
+    image: "/images/teilnehmerinfo.jpg"
+    content: "Melden Sie sich zu diesem Tagesturnier an, messen Sie sich mit den Besten und sammeln Sie wertvolle LK-Punkte!<br/><br/>
+      Hier die wichtigsten Details:"
     bulletpoints:
-      - "10+ Pre-build pages"
-      - "95+ Google Pagespeed Score"
-      - "Build with Hugo and TailwindCSS for easy and customizable styling"
-      - "Fully responsive on all devices"
-      - "SEO-optimized for better search engine rankings"
-      - "**Open-source and free** for personal and commercial use"
-    button:
-      enable: false
-      label: "Get Started Now"
-      link: "#"
-
-  - title: "Discover the Key Features Of Hugo"
-    image: "/images/service-2.png"
-    content: "Hugo is an all-in-one web framework for building fast, content-focused websites. It offers a range of exciting features for developers and website creators. Some of the key features are:"
-    bulletpoints:
-      - "Zero JS, by default: No JavaScript runtime overhead to slow you down."
-      - "Customizable: Tailwind, MDX, and 100+ other integrations to choose from."
-      - "UI-agnostic: Supports React, Preact, Svelte, Vue, Solid, Lit and more."
-    button:
-      enable: true
-      label: "Get Started Now"
-      link: "https://github.com/zeon-studio/hugoplate"
-
-  - title: "The Top Reasons to Choose Hugo for Your Hugo Project"
-    image: "/images/service-3.png"
-    content: "With Hugo, you can build modern and content-focused websites without sacrificing performance or ease of use."
-    bulletpoints:
-      - "Instantly load static sites for better user experience and SEO."
-      - "Intuitive syntax and support for popular frameworks make learning and using Hugo a breeze."
-      - "Use any front-end library or framework, or build custom components, for any project size."
-      - "Built on cutting-edge technology to keep your projects up-to-date with the latest web standards."
+      - "LK-Tagesturnier"
+      - "Herren- und Damenkonkurrenz"
+      - "Je 16 Teilnehmer pro Konkurrenz"
+      - "Gespielt wird im Spiralsystem"
+      - "Auslosung am 1. April 2025"
+      - "Turnier am 6. April 2025"
     button:
       enable: false
       label: ""
       link: ""
+
+  - title: "Besucherinformationen"
+    image: "/images/zuschauerinfo.png"
+    content: "Herzlich willkommen, liebe Tennisfans!<br/>Erleben Sie hochklassiges Tennis auf unserer wunderschönen Anlage. Genießen Sie spannende Matches in entspannter Atmosphäre. Kommen Sie vorbei und machen Sie das Drais Open zu einem unvergesslichen Erlebnis!"
+    bulletpoints:
+      - "Für Ihr leibliches Wohl ist bestens gesorgt"
+      - "Tischtennisplatte und weitere Spiele für Groß und Klein" 
+      - "Eintritt frei"
+    button:
+      enable: false
+      label: ""
+      link: ""
+
+  - title: "Anfahrt"
+    image: "/images/tsg-drais-anfahrt.png"
+    content: "Biegen Sie in Drais von der Hauptstraße auf Höhe des Obsthofs Nikolaus ab und folgenden Sie der Straße bis zum Parkplatz.<br><br>Tennisclub Mainz-Drais e.V.<br/>Hesslerweg 30<br/>55127 Mainz"
+    button:
+      enable: false
+      label: ""
+      link: ""
+
+  
 ---
+
+Anfahrt
+Tennisclub Mainz-Drais e.V.
+[Genaue Adresse einfügen]
+
+[Hier Google Maps-Bild einfügen]
+
+Kontakt
+Turnierleitung: [Name des Organisators]
+E-Mail: [E-Mail-Adresse]
+Telefon: [Telefonnummer]
+
+Für Fragen zum Turnier, zur Anmeldung oder sonstige Anliegen stehen wir Ihnen gerne zur Verfügung.

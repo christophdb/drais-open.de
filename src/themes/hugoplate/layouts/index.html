@@ -1,4 +1,39 @@
 {{ define "main" }}
+  <!-- Countdown -->
+  {{ with .Params.countdown }}
+    <section class="section pt-14 countdown-background">
+        <div class="container">
+          <div class="row justify-center">
+            <div class="lg:col-7 md:col-9 mb-8 text-center">
+              <h1 class="mb-4 text-h3 lg:text-h1">
+                {{ .title | markdownify }}
+              </h1>
+              <p class="mb-8 text-lg">
+                {{ .content | markdownify }}
+              </p>
+              <p class="mb-8">
+                {{ partial "countdown.html" . }}
+              </p>
+              {{ with .button }}
+              {{ if .enable }}
+                <a
+                  class="btn btn-primary"
+                  href="{{ .link | absURL }}"
+                  {{ if strings.HasPrefix .link `http` }}
+                    target="_blank" rel="noopener"
+                  {{ end }}>
+                  {{ .label }}
+                  <i class="fa fa-arrow-right pl-2"></i>
+                </a>
+              {{ end }}
+            {{ end }}
+            </div>
+          </div>
+        </div>
+    </section>
+  {{ end }}
+  <!-- /Countdown -->
+
   <!-- Banner -->
   {{ with .Params.banner }}
     <section class="section pt-14">
@@ -33,26 +68,6 @@
     </section>
   {{ end }}
   <!-- /Banner -->
-
-  <!-- Countdown -->
-  {{ with .Params.countdown }}
-    <section class="section pt-14 countdown-background">
-        <div class="container">
-          <div class="row justify-center">
-            <div class="lg:col-7 md:col-9 mb-8 text-center">
-              <h1 class="mb-4 text-h3 lg:text-h1">
-                {{ .title | markdownify }}
-              </h1>
-              <p class="mb-8">
-                {{ .content | markdownify }}
-                {{ partial "countdown.html" . }}
-              </p>
-            </div>
-          </div>
-        </div>
-    </section>
-  {{ end }}
-  <!-- /Countdown -->
 
   <!-- Features -->
   {{ range $i, $e:= .Params.features }}

@@ -1,4 +1,27 @@
 /* Add your own custom styles here */
 .countdown-background {
-    background-image: url("/images/countdown-background.png");
+    background-image: url("/images/countdown-background.jpg");
+}
+
+#timer {
+    display: flex; /* Align items horizontally */
+    justify-content: center; /* Center items horizontally */
+    gap: 40px; /* Add spacing between items */
+}
+
+.countdown_item {
+    display: flex;
+    flex-direction: column; /* Stack legend above time */
+    align-items: center; /* Center legend and time */
+}
+
+.countdown_legend {
+    font-size: 24px; /* Adjust font size for legend */
+    font-weight: bold; /* Make legend text bold */
+}
+
+.countdown_time {
+    font-size: 80px; /* Larger font size for time */
+    display: block;
+    font-family: 'Signika';
 }
