@@ -69,6 +69,30 @@
   {{ end }}
   <!-- /Banner -->
 
+  <!-- Auslosung -->
+  {{ with .Params.auslosung }}
+  <section class="section pt-14">
+    <div class="container">
+      <div class="row justify-center">
+        <div class="lg:col-7 md:col-9 mb-8 text-center">
+          <h1 class="mb-4 text-h3 lg:text-h1">
+            {{ .title | markdownify }}
+          </h1>
+          
+        </div>
+        <div>
+          <h2>Damen</h2>
+          <iframe className="dtable-embed" src="https://cloud.seatable.io/dtable/view-external-links/53494836ebc8497bab29/" frameBorder="0" width="100%" height="667" style="background: transparent; border: 1px solid #ccc;"></iframe>
+        </div>
+        <div class="mt-6">
+          <h2>Herren</h2>
+          <iframe className="dtable-embed" src="https://cloud.seatable.io/dtable/view-external-links/31e9ba2c2f804e3196b9/" frameBorder="0" width="100%" height="667" style="background: transparent; border: 1px solid #ccc;"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+  {{ end }}
+
   <!-- Features -->
   {{ range $i, $e:= .Params.features }}
     <section class="section-sm {{ if (modBool $i 2) }}bg-gradient{{ end }}">

@@ -20,6 +20,9 @@ countdown:
 #    label: "Jetzt anmelden auf my MyBigPoint"
 #    link: "https://spieler.tennis.de/web/guest/turniersuche?tournamentId=683758"
 
+auslosung:
+  title: "Die Begegungen am 06.04.2025"
+
 # Features
 features:
   - title: "Teilnehmerinformationen"
