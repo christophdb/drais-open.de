@@ -2,12 +2,12 @@
 # Countdown
 countdown:
     title: "Tage bis zu den Drais-Open"
-    content: "Erleben Sie spannende Matches und sportliche Höchstleistungen<br/>am 06.04.2025!"
+    content: "Erleben Sie spannende Matches und sportliche Höchstleistungen<br/>am 10.08.2025!"
     image: "/images/countdown-background.png"
     button:
       enable: true
       label: "Jetzt anmelden auf my MyBigPoint"
-      link: "https://spieler.tennis.de/web/guest/turniersuche?tournamentId=683758"
+      link: "https://spieler.tennis.de/web/guest/turniersuche?tournamentId=717078"
     
 
 # Banner
@@ -20,8 +20,8 @@ countdown:
 #    label: "Jetzt anmelden auf my MyBigPoint"
 #    link: "https://spieler.tennis.de/web/guest/turniersuche?tournamentId=683758"
 
-auslosung:
-  title: "Die Begegungen am 06.04.2025"
+#auslosung:
+#  title: "Die Begegungen am 06.04.2025"
 
 # Features
 features:
