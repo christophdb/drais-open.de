@@ -34,8 +34,8 @@ features:
       - "Herren- und Damenkonkurrenz"
       - "Je 16 Teilnehmer pro Konkurrenz"
       - "Gespielt wird im Spiralsystem"
-      - "Auslosung am 1. April 2025"
-      - "Turnier am 6. April 2025"
+      - "Auslosung am 4. August 2025"
+      - "Turnier am 10. August 2025"
     button:
       enable: false
       label: ""
