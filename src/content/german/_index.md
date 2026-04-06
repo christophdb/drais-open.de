@@ -7,7 +7,8 @@ countdown:
     button:
       enable: true
       label: "Jetzt anmelden auf my MyBigPoint"
-      link: "https://spieler.tennis.de/web/guest/turniersuche?tournamentId=717078"
+      link: "https://www.tennis.de/spielen/spielbetrieb/turniersuche.html#detail/818502"
+      #link: "https://spieler.tennis.de/web/guest/turniersuche?tournamentId=717078"
     
 
 # Banner
