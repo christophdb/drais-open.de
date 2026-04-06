@@ -2,7 +2,7 @@
 # Countdown
 countdown:
     title: "Tage bis zu den Drais-Open"
-    content: "Erleben Sie spannende Matches und sportliche Höchstleistungen<br/>am 10.08.2025!"
+    content: "Erleben Sie spannende Matches und sportliche Höchstleistungen<br/>am 12.04.2026!"
     image: "/images/countdown-background.png"
     button:
       enable: true
@@ -21,7 +21,7 @@ countdown:
 #    link: "https://spieler.tennis.de/web/guest/turniersuche?tournamentId=683758"
 
 auslosung:
-  title: "Die Begegungen am 10.08.2025"
+  title: "Die Begegungen am 12.04.2026"
 
 # Features
 features:
@@ -34,8 +34,8 @@ features:
       - "Herren- und Damenkonkurrenz"
       - "Je 16 Teilnehmer pro Konkurrenz"
       - "Gespielt wird im Spiralsystem"
-      - "Auslosung am 4. August 2025"
-      - "Turnier am 10. August 2025"
+      - "Auslosung am 8. April 2026"
+      - "Turnier am 12. August 2026"
     button:
       enable: false
       label: ""
